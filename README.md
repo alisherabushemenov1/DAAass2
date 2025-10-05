@@ -5,7 +5,6 @@
 ### 1. General Information
 
 * Repository name: **DAAass2**
-* Repository link: [github.com/alisherabushemenov1/DAAass2](https://github.com/alisherabushemenov1/DAAass2)
 * Language: **Java**
 * Main project files/folders:
 
