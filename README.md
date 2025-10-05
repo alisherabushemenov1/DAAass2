@@ -1,7 +1,3 @@
-## Report on Work Done
-
-*(based on analysis of repository alisherabushemenov1/DAAass2)*
-
 ### 1. General Information
 
 * Repository name: **DAAass2**
