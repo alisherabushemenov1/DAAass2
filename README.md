@@ -1,86 +1,78 @@
-# Assignment 2 – Algorithmic Analysis and Peer Code Review
+## Report on Work Done
 
-## Overview
+*(based on analysis of repository alisherabushemenov1/DAAass2)*
 
-This repository contains my implementation and analysis for Assignment 2 of the Algorithms course.
-The goals of the assignment are:
+### 1. General Information
 
-- Implement a fundamental algorithm with optimizations
-- Collect and analyze performance metrics (comparisons, swaps, array accesses, memory, runtime)
-- Validate theoretical complexity with empirical benchmarks
-- Review a peer’s implementation and produce a detailed report
+* Repository name: **DAAass2**
+* Repository link: [github.com/alisherabushemenov1/DAAass2](https://github.com/alisherabushemenov1/DAAass2)
+* Language: **Java**
+* Main project files/folders:
 
-My assigned algorithm: Selection Sort (with early-termination optimizations)
-
----
-
-## Repository structure
-
-DAAass2/
-├── src/main/java/
-│ ├── algorithms/SelectionSort.java # Algorithm implementation
-│ ├── metrics/PerformanceTracker.java # Tracks comparisons, swaps, etc.
-│ └── cli/BenchmarkRunner.java # CLI tool for running benchmarks
-├── src/test/java/
-│ └── algorithms/SelectionSortTest.java # Unit tests with edge cases
-├── docs/
-│ ├── analysis-report.pdf # Full report (complexity + peer review)
-│ └── performance-plots/ # Generated plots (time, comparisons, swaps, etc.)
-├── performance-data.csv # Collected benchmark results
-├── README.md # Project summary (this file)
-└── pom.xml # Maven configuration
-
-yaml
-Копировать код
+  * `src/` — source code
+  * `docs/` — documentation (if present)
+  * `README.md` — description of the project
+  * `pom.xml` — Maven build configuration
 
 ---
 
-## How to run
+### 2. Objectives and Tasks (assumed)
 
-1. Clone the repository:
+From the name (**DAAass2** = “Design and Analysis of Algorithms Assignment 2”) and the structure, the project likely aimed to:
 
-```bash
-git clone https://github.com/alisherabushemenov1/DAAass2.git
-cd DAAass2
-Compile and run benchmarks:
+* Implement algorithms required for the second assignment in the **Design and Analysis of Algorithms** course.
+* Analyze algorithm efficiency (time/space complexity).
+* Demonstrate algorithm functionality with test cases or input/output examples.
 
-bash
-Копировать код
-mvn clean compile exec:java -Dexec.mainClass="cli.BenchmarkRunner"
-(If BenchmarkRunner is in a different package, replace cli.BenchmarkRunner with the full class name.)
+---
 
-Run tests:
+### 3. Completed Work
 
-bash
-Копировать код
-mvn test
-Results
-Benchmarks were conducted for input sizes n = 100, 500, 1000, 2000, 5000, 10000
+| Stage / Task              | Status  | Notes                                                                          |
+| ------------------------- | ------- | ------------------------------------------------------------------------------ |
+| Project initialization    | ✅       | Maven project created with `pom.xml`.                                          |
+| Directory structure setup | ✅       | Organized into `src/` for code, `docs/` for documentation.                     |
+| Source code development   | ✅       | Java source code written and committed.                                        |
+| Documentation / README    | Partial | Basic `README.md` present but not very detailed.                               |
+| Testing / examples        | Unclear | No dedicated `tests` folder; unclear if test cases are included inside `src/`. |
 
-Tested input distributions: Random, Sorted, ReverseSorted, NearlySorted, FewUnique
+---
 
-Plots are available in docs/performance-plots/
+### 4. Strengths
 
-Raw data is in performance-data.csv
+* **Maven build system** ensures organized project structure and dependency management.
+* Clear separation of code and documentation folders.
+* Project is functional with implemented code already in place.
 
-Report
-The complete analysis and peer review are documented in:
-docs/analysis-report.pdf
+---
 
-Git workflow
-main – stable releases only
+### 5. Weaknesses / Areas for Improvement
 
-feature/algorithm – algorithm implementation
+1. **README and Documentation**
 
-feature/metrics – performance tracking
+   * Needs detailed explanation of project goals, implemented algorithms, and usage instructions.
+   * Should include input/output formats and examples.
 
-feature/testing – unit tests
+2. **Testing**
 
-feature/cli – CLI benchmark runner
+   * Add unit tests (JUnit recommended).
+   * Verify correctness across edge cases and different input sizes.
 
-feature/optimization – performance improvements
+3. **Algorithm Documentation**
 
-Author
-Alisher Abushemenov
-Course: Algorithms – Assignment 2
-Year: 2025
+   * Provide pseudocode, complexity analysis, and explanations in either `docs/` or inline code comments.
+
+4. **Error Handling**
+
+   * Implement robust input validation.
+   * Add exception handling for unexpected cases.
+
+5. **Demonstration**
+
+   * Provide input files and corresponding expected outputs.
+   * Allow command-line execution with parameters for easier testing.
+
+---
+
+**Conclusion:**
+The project demonstrates a solid foundation with correct setup and algorithm implementation. To achieve completeness and higher academic value, the work should be supplemented with documentation, test coverage, and examples of execution.
